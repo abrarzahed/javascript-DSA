@@ -42,3 +42,20 @@ const factorial = (n) => {
 console.log(factorial(5));
 console.log(factorial(1));
 */
+
+/* 
+  COMMENT: Prime Number
+*/
+const primeNumber = (n) => {
+  if (n < 2) {
+    return false;
+  }
+  for (let i = 2; i < n; i++) {
+    if (n % i === 0) {
+      return false;
+    }
+  }
+  return true;
+};
+// Big-O = O(n)
+console.log(primeNumber(5));
