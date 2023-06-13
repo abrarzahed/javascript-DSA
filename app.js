@@ -46,6 +46,7 @@ console.log(factorial(1));
 /* 
   COMMENT: Prime Number
 */
+/*
 const primeNumber = (n) => {
   if (n < 2) {
     return false;
@@ -59,3 +60,38 @@ const primeNumber = (n) => {
 };
 // Big-O = O(n)
 console.log(primeNumber(5));
+*/
+
+/* 
+  COMMENT: is power of two
+*/
+/*
+function isPowerOfTwo(n) {
+  if (n < 1) {
+    return false;
+  }
+  while (n > 1) {
+    if (n % 2 !== 0) {
+      return false;
+    }
+    n = n / 2;
+  }
+  return true;
+}
+// Big-O = O(logn)
+console.log(isPowerOfTwo(5));
+console.log(isPowerOfTwo(1));
+*/
+
+/* 
+  COMMENT: recursive factorial
+*/
+/*
+function recursiveFactorial(n) {
+  if (n === 0) {
+    return 1;
+  }
+  return n * recursiveFactorial(n - 1);
+}
+console.log(recursiveFactorial(5));
+*/
