@@ -1,3 +1,6 @@
+/****************************************** 
+COMMENT:  Math algorithm
+******************************************/
 /*
 const summation = (n) => {
   let sum = 0;
@@ -94,4 +97,23 @@ function recursiveFactorial(n) {
   return n * recursiveFactorial(n - 1);
 }
 console.log(recursiveFactorial(5));
+*/
+
+/****************************************** 
+COMMENT: Search algorithm   
+******************************************/
+/* 
+  COMMENT: linear search
+*/
+/*
+function doLinearSearch(arr, n) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === n) {
+      return i;
+    }
+  }
+  return -1;
+}
+// Big-o = O(n)
+console.log(doLinearSearch([1, 2, 3, 4, 5], 5));
 */
