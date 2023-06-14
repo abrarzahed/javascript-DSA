@@ -179,3 +179,18 @@ function cartesianArray(arr1, arr2) {
 // Big-n = O(mn)
 console.log(cartesianArray([1, 2], [3, 4, 5, 6]));
 */
+
+/****************************************** 
+COMMENT: Climbing staircase   
+******************************************/
+/*
+function climbingStaircase(n) {
+  const numOfWays = [1, 2];
+  for (let i = 2; i <= n; i++) {
+    numOfWays[i] = numOfWays[i - 1] + numOfWays[i - 2];
+  }
+  return numOfWays[n - 1];
+}
+// Big-o = O(n)
+console.log(climbingStaircase(4));
+*/
