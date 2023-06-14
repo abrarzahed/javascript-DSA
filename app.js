@@ -163,3 +163,19 @@ function doBubbleSort(arr) {
 // Big-o = O(n^2)
 console.log(doBubbleSort([2, 1 - 2, 5, 3, -5]));
 */
+/****************************************** 
+COMMENT: cartesian product    
+******************************************/
+/*
+function cartesianArray(arr1, arr2) {
+  const result = [];
+  for (let i = 0; i < arr1.length; i++) {
+    for (let j = 0; j < arr2.length; j++) {
+      result.push([arr1[i], arr2[j]]);
+    }
+  }
+  return result;
+}
+// Big-n = O(mn)
+console.log(cartesianArray([1, 2], [3, 4, 5, 6]));
+*/
