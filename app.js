@@ -194,3 +194,20 @@ function climbingStaircase(n) {
 // Big-o = O(n)
 console.log(climbingStaircase(4));
 */
+
+/****************************************** 
+COMMENT: tower of hanoi   
+******************************************/
+/*
+function solveTowerOfHanoi(n, fromRoad, toRoad, byRoad) {
+  if (n === 1) {
+    console.log(`Move disk 1 from ${fromRoad} to ${toRoad}`);
+    return;
+  }
+  solveTowerOfHanoi(n - 1, fromRoad, byRoad, toRoad);
+  console.log(`Move disk ${n} from ${fromRoad} to ${toRoad}`);
+
+  solveTowerOfHanoi(n - 1, byRoad, toRoad, fromRoad);
+}
+solveTowerOfHanoi(3, "A", "C", "B");
+*/
