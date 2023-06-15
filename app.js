@@ -211,3 +211,13 @@ function solveTowerOfHanoi(n, fromRoad, toRoad, byRoad) {
 }
 solveTowerOfHanoi(3, "A", "C", "B");
 */
+
+/****************************************** 
+COMMENT: data structure   
+******************************************/
+const arr = [1, 2, 34, "Abrar"];
+arr.push(5);
+arr.unshift(0);
+for (const item of arr) {
+  console.log(item);
+}
