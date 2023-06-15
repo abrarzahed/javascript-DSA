@@ -215,9 +215,66 @@ solveTowerOfHanoi(3, "A", "C", "B");
 /****************************************** 
 COMMENT: data structure   
 ******************************************/
+/*
 const arr = [1, 2, 34, "Abrar"];
 arr.push(5);
 arr.unshift(0);
 for (const item of arr) {
   console.log(item);
 }
+*/
+
+/*
+const obj = {
+  name: "abrar",
+  age: 28,
+};
+function swapKeyValue(obj) {
+  for (const [keys, values] of Object.entries(obj)) {
+    for (let i = 0; i < keys.length; i++) {
+      obj[keys[i + 1]] = values[i];
+      obj[keys[i]] = values[i + 1];
+      console.log(obj);
+      return;
+    }
+  }
+}
+swapKeyValue(obj);
+*/
+
+/****************************************** 
+COMMENT: stack implementation   
+******************************************/
+/*
+class Stack {
+  constructor() {
+    this.items = [];
+  }
+  push(item) {
+    this.items.push(item);
+  }
+  pop() {
+    return this.items.pop();
+  }
+  peak() {
+    return this.items[this.items.length - 1];
+  }
+  isEmpty() {
+    return this.items.length === 0;
+  }
+  size() {
+    return this.items.length;
+  }
+  print() {
+    console.log(this.items.toString());
+  }
+}
+
+const stack1 = new Stack();
+console.log(stack1.isEmpty());
+stack1.push(10);
+stack1.push(30);
+console.log(stack1.size());
+console.log(stack1.peak());
+console.log(stack1.print());
+*/
