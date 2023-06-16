@@ -278,3 +278,44 @@ console.log(stack1.size());
 console.log(stack1.peak());
 console.log(stack1.print());
 */
+
+/****************************************** 
+COMMENT: queue implementation
+******************************************/
+class Queue {
+  constructor() {
+    this.items = [];
+  }
+  enqueue(element) {
+    this.items.push(element);
+  }
+  dequeue() {
+    return this.items.shift();
+  }
+  isEmpty() {
+    return this.items.length === 0;
+  }
+  peak() {
+    if (!this.isEmpty()) {
+      return this.items[0];
+    }
+    return null;
+  }
+  size() {
+    return this.items.length;
+  }
+  print() {
+    console.log(this.items.toString());
+  }
+}
+
+const queue1 = new Queue();
+console.log(queue1.isEmpty());
+queue1.enqueue(10);
+queue1.enqueue(20);
+queue1.enqueue(30);
+console.log(queue1.size());
+queue1.print();
+console.log(queue1.dequeue());
+console.log(queue1.peak());
+queue1.print();
