@@ -280,8 +280,9 @@ console.log(stack1.print());
 */
 
 /****************************************** 
-COMMENT: queue implementation
+COMMENT: queue implementation part 1
 ******************************************/
+/*
 class Queue {
   constructor() {
     this.items = [];
@@ -309,6 +310,8 @@ class Queue {
   }
 }
 
+
+// Big-O = O(n)
 const queue1 = new Queue();
 console.log(queue1.isEmpty());
 queue1.enqueue(10);
@@ -319,3 +322,48 @@ queue1.print();
 console.log(queue1.dequeue());
 console.log(queue1.peak());
 queue1.print();
+*/
+
+/****************************************** 
+COMMENT: queue implementation part 2 using object
+******************************************/
+/*
+class QueueObj {
+  constructor() {
+    this.items = {};
+    this.rear = 0;
+    this.front = 0;
+  }
+  enqueue(element) {
+    this.items[this.rear] = element;
+    this.rear++;
+  }
+  dequeue() {
+    const item = this.items[this.front];
+    delete this.items[this.front];
+    this.front++;
+    return item;
+  }
+  isEmpty() {
+    return this.rear - this.front === 0;
+  }
+  peak() {
+    return this.items[this.front];
+  }
+  size() {
+    return this.rear - this.front;
+  }
+  print() {
+    console.log(this.items);
+  }
+}
+
+const queue2 = new QueueObj();
+queue2.enqueue(10);
+queue2.enqueue(20);
+queue2.enqueue(30);
+console.log(queue2.size());
+queue2.dequeue();
+queue2.print();
+console.log(queue2.peak());
+*/
